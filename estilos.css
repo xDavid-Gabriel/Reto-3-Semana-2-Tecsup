@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url(font/Nunito-Bold.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: yellow;
+}
+#formulario-contacto {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 450px;
+
+  padding: 10px 20px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input,
+textarea {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 30px;
+  padding: 7px;
+  border: none;
+}
+input {
+  border-radius: 50px;
+}
+
+textarea {
+  min-height: 172px;
+  max-height: 200px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+#presiona {
+  padding: 10px 13px;
+  background-color: #9d0693;
+  color: yellow;
+  border-radius: 50px;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#presiona:hover {
+  background: #660b60;
+  animation: miAnimacion 0.3s alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes miAnimacion {
+  to {
+    transform: scale(0.9);
+  }
+}
+
+.consulta {
+  font-size: 50px;
+  color: #9d0693;
+  text-align: center;
+  margin-bottom: 25px;
+  animation: inicio 0.3s 6 alternate;
+  font-family: "Nunito-Bold";
+}
+@keyframes inicio {
+  to {
+    transform: scale(0.9);
+  }
+}
